@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+
+<nav class="bg-white py-4 px-6 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-2xl font-bold text-black">UOMO</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-black hover:text-red-600">Home</a>
+                    <a href="/index2.html" class="text-black hover:text-red-600">Shop</a>
+                    <a href="/index3.html" class="text-black hover:text-red-600">Blog</a>
+                    <a href="/index5.html" class="text-black hover:text-red-600">Pages</a>
+                    <a href="/index2.html" class="text-black hover:text-red-600">About</a>
+                    <a href="/index6.html" class="text-black hover:text-red-600">Contact</a>
+                </div>
+            </div>
+
+            <!-- Icons in the navbar -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="search-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="person-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="bag-outline" class="w-6 h-6"></ion-icon>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-black focus:outline-none hover:text-red-600">
+                    <ion-icon name="menu-outline" class="w-6 h-6"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu section -->
+        <div id="menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 px-6">
+            <a href="#" class="text-black hover:text-red-600">Home</a>
+            <a href="#" class="text-black hover:text-red-600">Shop</a>
+            <a href="#" class="text-black hover:text-red-600">Blog</a>
+            <a href="#" class="text-black hover:text-red-600">Pages</a>
+            <a href="#" class="text-black hover:text-red-600">About</a>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+        </div>
+    </nav>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-5xl font-bold">JACKETS & COATS</h1>
+            <div class="mt-4">
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#" class="text-lg font-semibold text-gray-800 border-b-2 border-black">ALL</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">STAYHOME</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">JACKETS</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">HOODIES</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">MEN</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">WOMEN</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">ACCESSORIES</a></li>
+                    <li><a href="#" class="text-lg font-semibold text-gray-800">SHOES</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/product 1.webp" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cropped Faux Leather Jacket</h2>
+                <p class="text-gray-500">$29</p>
+                <p class="text-sm text-gray-400">8k+ reviews</p>
+            </div>
+            <!-- Repeat Product Cards as necessary -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/1.jpg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Calvin Shorts</h2>
+                <p class="text-gray-500">$62</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/product 5.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Kirby T-Shirt</h2>
+                <p class="text-gray-500">$17</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/3.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cableknit Shawl</h2>
+                <p class="text-gray-500"><span class="line-through">$129</span> $99</p>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-8">
+            <button class="bg-gray-800 text-white px-6 py-2 rounded-full">SHOW MORE</button>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/product 5.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cropped Faux Leather Jacket</h2>
+                <p class="text-gray-500">$29</p>
+                <p class="text-sm text-gray-400">8k+ reviews</p>
+            </div>
+            <!-- Repeat Product Cards as necessary -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/3.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Calvin Shorts</h2>
+                <p class="text-gray-500">$62</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/product2.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Kirby T-Shirt</h2>
+                <p class="text-gray-500">$17</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/2.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cableknit Shawl</h2>
+                <p class="text-gray-500"><span class="line-through">$129</span> $99</p>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-8">
+            <button class="bg-gray-800 text-white px-6 py-2 rounded-full">SHOW MORE</button>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/product2.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cropped Faux Leather Jacket</h2>
+                <p class="text-gray-500">$29</p>
+                <p class="text-sm text-gray-400">8k+ reviews</p>
+            </div>
+            <!-- Repeat Product Cards as necessary -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/a.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Calvin Shorts</h2>
+                <p class="text-gray-500">$62</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/bag page 1.webp" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Kirby T-Shirt</h2>
+                <p class="text-gray-500">$17</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/3.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cableknit Shawl</h2>
+                <p class="text-gray-500"><span class="line-through">$129</span> $99</p>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-8">
+            <button class="bg-gray-800 text-white px-6 py-2 rounded-full">SHOW MORE</button>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/bag page 1.webp" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cropped Faux Leather Jacket</h2>
+                <p class="text-gray-500">$29</p>
+                <p class="text-sm text-gray-400">8k+ reviews</p>
+            </div>
+            <!-- Repeat Product Cards as necessary -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="/assets/1.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Calvin Shorts</h2>
+                <p class="text-gray-500">$62</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="assets/3.png" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Kirby T-Shirt</h2>
+                <p class="text-gray-500">$17</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="assets/2.jpeg" alt="Product Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-lg font-semibold mt-4">Cableknit Shawl</h2>
+                <p class="text-gray-500"><span class="line-through">$129</span> $99</p>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-8">
+            <button class="bg-gray-800 text-white px-6 py-2 rounded-full">SHOW MORE</button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+      <!-- Company Info -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">UQMO</h4>
+        <p>1418 River Drive, Suite 35 Cottonhall,<br>CA 9622 United States</p>
+        <p class="mt-4">sale@uomo.com<br>+1 246-345-0695</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Company Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">COMPANY</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Affiliates</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Shop Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">SHOP</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">New Arrivals</a></li>
+          <li><a href="#" class="hover:underline">Accessories</a></li>
+          <li><a href="#" class="hover:underline">Men</a></li>
+          <li><a href="#" class="hover:underline">Women</a></li>
+          <li><a href="#" class="hover:underline">Shop All</a></li>
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">HELP</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Customer Service</a></li>
+          <li><a href="#" class="hover:underline">My Account</a></li>
+          <li><a href="#" class="hover:underline">Find a Store</a></li>
+          <li><a href="#" class="hover:underline">Legal & Privacy</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Gift Card</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe Form -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">SUBSCRIBE</h4>
+        <p>Be the first to get the latest news about trends, promotions, and much more!</p>
+        <div class="mt-4">
+          <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-700 text-gray-300 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+          <button class="mt-4 w-full bg-gray-600 text-white py-2 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">JOIN</button>
+        </div>
+        <div class="mt-4 flex space-x-2">
+          <img src="i class="fa-brands fa-cc-discover"></i>" alt="Discover" class="h-6">
+          <img src="<i class="fa-solid fa-building-columns"></i>" >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Skrill_logo.svg" alt="Skrill" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Visa_2021.svg" alt="Visa" class="h-6">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+      <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

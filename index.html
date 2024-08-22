@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white py-4 px-6 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-2xl font-bold text-black ">UOMO</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-black hover:text-red-600">Home</a>
+                    <a href="/index2.html" class="text-black hover:text-red-600">Shop</a>
+                    <a href="/index3.html" class="text-black hover:text-red-600">Blog</a>
+                    <a href="/index4.html" class="text-black hover:text-red-600">Pages</a>
+                    <a href="/index2.html" class="text-black hover:text-red-600">About</a>
+                    <a href="/index6.html" class="text-black hover:text-red-600">Contact</a>
+                </div>
+            </div>
+
+            <!-- Icons in the navbar -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="search-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="person-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="bag-outline" class="w-6 h-6"></ion-icon>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-black focus:outline-none hover:text-red-600">
+                    <ion-icon name="menu-outline" class="w-6 h-6"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu section -->
+        <div id="menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 px-6">
+            <a href="#" class="text-black hover:text-red-600">Home</a>
+            <a href="#" class="text-black hover:text-red-600">Shop</a>
+            <a href="#" class="text-black hover:text-red-600">Blog</a>
+            <a href="#" class="text-black hover:text-red-600">Pages</a>
+            <a href="#" class="text-black hover:text-red-600">About</a>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-pink-100 h-screen flex flex-col  md:flex-row items-center justify-center px-4 md:px-8">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-50" style="background-image: url(https://images.unsplash.com/photo-1715421363314-770e21fe00d1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8);"></div>
+    
+        <!-- Text content -->
+        <div class="relative z-10 text-center md:text-left max-w-md md:max-w-lg px-4 md:px-0">
+            <h1 class="text-lg text-blue-600">NEW TREND</h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-black">SUMMER SALE STYLISH</h2>
+            <h3 class="text-5xl md:text-7xl font-bold text-black">WOMENS</h3>
+            <a href="#" class="mt-4 inline-block text-black hover:text-red-600 underline">DISCOVER MORE</a>
+        </div>
+    
+        <!-- Image content -->
+        <div class="relative z-10 flex-shrink-0 mt-8 md:mt-0">
+            <img src="./assets/main image 4.avif" alt="New Task Girl Pic" class="w-full md:w-auto h-auto max-w-xs">
+        </div>
+    </section>
+
+
+    <!-- First Section: Spring Collection Banner -->
+  <section class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4 text-center ">
+      <p class="text-red-600 text-lg mb-2">DEAL OF THE WEEK</p>
+      <h1 class="text-4xl font-bold mb-4">SPRING COLLECTION</h1>
+      <a href="#" class="text-black underline text-lg">SHOP NOW</a>
+      <div class="flex justify-center items-center mt-6">
+        <div class="text-center mx-2">
+          <p class="text-2xl font-bold">332</p>
+          <p class="text-sm text-gray-600">DAYS</p>
+        </div>
+        <div class="text-2xl font-bold">:</div>
+        <div class="text-center mx-2">
+          <p class="text-2xl font-bold">18</p>
+          <p class="text-sm text-gray-600">HOURS</p>
+        </div>
+        <div class="text-2xl font-bold">:</div>
+        <div class="text-center mx-2">
+          <p class="text-2xl font-bold">23</p>
+          <p class="text-sm text-gray-600">MINS</p>
+        </div>
+        <div class="text-2xl font-bold">:</div>
+        <div class="text-center mx-2">
+          <p class="text-2xl font-bold">37</p>
+          <p class="text-sm text-gray-600">SEC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Section: Product Grid -->
+  <section class="py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Women's T-Shirts -->
+      <div class="bg-red-500 col-span-1 md:col-span-2 p-4 text-center">
+        <img src="/assets/sp.collection.avif" alt="Women's T-Shirts" class="w-full object-cover h-60">
+        <p class="text-white text-xl mt-2">STARTING AT $19</p>
+        <p class="text-white text-2xl font-bold">Women's T-Shirts</p>
+      </div>
+
+      <!-- Men's Sportswear -->
+      <div class="bg-gray-100 p-4 text-center">
+        <img src="/assets/main image 3.webp" alt="Men's Sportswear" class="w-full object-cover h-60">
+        <p class="text-gray-600 text-xl mt-2">STARTING AT $39</p>
+        <p class="text-gray-800 text-2xl font-bold">Men's Sportswear</p>
+      </div>
+    </div>
+    
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+      <!-- Knee-length Cotton Shorts -->
+      <div class="bg-gray-100 p-4 text-center">
+        <img src="/assets/bag page 1.webp" alt="Knee-length Cotton Shorts" class="w-full object-cover h-60">
+        <p class="text-gray-600 text-xl mt-2">STARTING AT $39</p>
+        <p class="text-gray-800 text-2xl font-bold">Knee-length Cotton Shorts</p>
+      </div>
+      
+      <!-- Canvas Trainers -->
+      <div class="bg-gray-100 p-4 text-center">
+        <img src="/assets/bag 3 page 1 .avif" alt="Canvas Trainers" class="w-full object-cover h-60">
+        <p class="text-gray-600 text-xl mt-2">STARTING AT $19</p>
+        <p class="text-gray-800 text-2xl font-bold">Canvas Trainers</p>
+      </div>
+      
+      <!-- Slim Fit Cotton Shorts -->
+      <div class="bg-gray-100 p-4 text-center">
+        <img src="/assets/glasses page 1 .avif" alt="Slim Fit Cotton Shorts" class="w-full object-cover h-60">
+        <p class="text-gray-600 text-xl mt-2">STARTING AT $21</p>
+        <p class="text-gray-800 text-2xl font-bold">Slim Fit Cotton Shorts</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- image card section  -->
+    
+    
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3  gap-4">
+            <!-- First larger card -->
+            <div class="relative bg-gray-100 h-96 lg:col-span-2">
+                <img src="/assets/yellow girl image.avif" alt="Women Collection" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                    <h2 class="text-xl font-bold">WOMEN COLLECTION</h2>
+                    <a href="#" class="mt-2 text-blue-300 hover:text-yellow-700">SHOP NOW</a>
+                </div>
+            </div>
+            <!-- Second column with 2 smaller cards -->
+            <div class="flex flex-col gap-2">
+                <div class="relative bg-gray-100 h-32 lg:h-48 md:h-48">
+                    <img src="/assets/men with white background .webp" alt="Men Collection" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                        <h2 class="text-xl font-bold">MEN COLLECTION</h2>
+                        <a href="#" class="mt-2 text-blue-300 hover:text-yellow-700">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="relative bg-gray-100 h-32 lg:h-48 md:h-48">
+                    <img src="/assets/girl with white background .webp" alt="Kids Collection" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                        <h2 class="text-xl font-bold">KIDS COLLECTION</h2>
+                        <a href="#" class="mt-2 text-blue-300 hover:text-yellow-700">SHOP NOW</a>
+                
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <a class="discovermore text-center hover:text-blue-700"href="">Discover more..</a>
+    </div>
+     <!-- card section  -->
+     <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-6 text-center">Our Trendy Products</h1>
+
+        <div class="flex mb-6 justify-center">
+            
+            <div class="flex space-x-4">
+                <a href="#" class="text-black-500 hover:text-blue-700">All</a>
+                <a href="#" class="text-black-500 hover:text-blue-700">New Arrival</a>
+                <a href="#" class="text-black-500 hover:text-blue-700">Best Seller</a>
+                <a href="#" class="text-black-500 hover:text-blue-700">Top Rated</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="./assets/product 1.webp" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 1</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">12 Reviews</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product2.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                <div class="absolute top-0 right-0 m-2">
+                    
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 2</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">10 Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product 3.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                <div class="absolute top-0 right-0 m-2">
+                    
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 3</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">10 Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product4.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                <div class="absolute top-0 right-0 m-2">
+                    
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 4</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">10 Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product 5.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 1</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">12 Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product6.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 2</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">12 Reviews</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product 7.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 3</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">12 Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+                <img src="/assets/product 8.jpeg" alt="Product 1" class="w-full h-48 object-cover transition duration-300 transform hover:scale-105">
+                
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold text-gray-800">$29.99</span>
+                        <a href="#" class="text-gray-600 hover:text-red-500">
+                            <icon><ion-icon name="heart-half-outline"></ion-icon></icon>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 font-semibold">Product Name 4</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-gray-600">12 Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+                <!-- bag section  -->
+
+          
+                    
+                        
+                
+                    
+
+<section class="relative bg-pink-100 h-screen w-screen flex flex-col  md:flex-row items-center justify-center px-4 md:px-8">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-50" style="background-image: url(https://images.unsplash.com/photo-1615651375396-839d1cecc695?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG9yaXpvbnRhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);"></div>
+    
+        <!-- Text content -->
+        <div class="relative z-30 text-center md:text-left max-w-md md:max-w-lg px-4 md:px-0">
+            <h1 class="text-lg text-red-600">____Deal of the Week </h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-black">SPRING COLLECTION</h2>
+            <h3 class="text-5xl md:text-7xl font-bold text-blue hover:text-yellow-700">SHOP NOW</h3>
+            <a href="#" class="mt-4 inline-block text-black hover:text-red-600 underline">DISCOVER MORE</a>
+        </div>
+    
+        <!-- Image content -->
+        <div class="relative z-10 flex-shrink-0 mt-8 md:mt-0">
+            
+        </div>
+    </section>
+        
+
+            
+
+            <!-- Limited Edition Section -->
+<section class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-center mb-12">LIMITED <span class="font-light">EDITION</span></h1>
+
+    <div class="flex space-x-4 overflow-x-scroll hide-scroll-bar">
+        <!-- Product 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg min-w-[200px]">
+            <img src="/assets/glasses page 1 .avif" alt="Product 1" class="w-full h-48 object-cover rounded-lg">
+            <div class="mt-4">
+                <p class="text-sm text-gray-500">Dresses</p>
+                <p class="text-lg font-semibold">Hub Accent Mirror</p>
+                <p class="text-lg font-semibold text-gray-700">$17</p>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg min-w-[200px]">
+            <img src="/assets/bag page 1.webp" alt="Product 2" class="w-full h-48 object-cover rounded-lg">
+            <div class="mt-4">
+                <p class="text-sm text-gray-500">Dresses</p>
+                <p class="text-lg font-semibold">Hosking Blue Area Rug</p>
+                <p class="text-lg font-semibold text-gray-700">$29</p>
+                <p class="text-sm text-yellow-500">★★★★☆</p>
+                <p class="text-sm text-gray-500">8k+ reviews</p>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg min-w-[200px]">
+            <img src="/assets/cap page 1.webp" alt="Product 3" class="w-full h-48 object-cover rounded-lg">
+            <div class="mt-4">
+                <p class="text-sm text-gray-500">Dresses</p>
+                <p class="text-lg font-semibold">Hanneman Pouf</p>
+                <p class="text-lg font-semibold text-gray-700">$62</p>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg min-w-[200px]">
+            <img src="/assets/bag 3 page 1 .avif" alt="Product 4" class="w-full h-48 object-cover rounded-lg">
+            <div class="mt-4">
+                <p class="text-sm text-gray-500">Dresses</p>
+                <p class="text-lg font-semibold">Cushion Futon Slipcover</p>
+                <p class="text-lg font-semibold text-gray-700">$62</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div class="flex justify-center mt-6">
+        <div class="h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer"></div>
+        <div class="h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer"></div>
+        <div class="h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center">
+        <p class="text-xl font-semibold">@UOMO</p>
+    </footer>
+</section>
+
+            <body class="bg-gray-100">
+
+  <!-- Section with icons and text -->
+  <section class="text-center py-10 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex justify-center mb-4">
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 3v18M3 9h18M9 15h12" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold">FAST AND FREE DELIVERY</h3>
+        <p class="text-gray-500">Free delivery for all orders over $140</p>
+      </div>
+      <div>
+        <div class="flex justify-center mb-4">
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.418-.5 1.296-1.5 2.296-1.5C15.577 9.5 17 10.833 17 12.5c0 1.667-1.423 3-2.704 3S12 13.667 12 12.5c0-1.667.704-3 2-3 1.018 0 1.853.531 2.367 1.316M7 10h.01M7 14h.01M5 11h.01M5 15h.01" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold">24/7 CUSTOMER SUPPORT</h3>
+        <p class="text-gray-500">Friendly 24/7 customer support</p>
+      </div>
+      <div>
+        <div class="flex justify-center mb-4">
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7M12 12h.01M12 8h.01M12 16h.01" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold">MONEY BACK GUARANTEE</h3>
+        <p class="text-gray-500">We return money within 30 days</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+      <!-- Company Info -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">UQMO</h4>
+        <p>1418 River Drive, Suite 35 Cottonhall,<br>CA 9622 United States</p>
+        <p class="mt-4">sale@uomo.com<br>+1 246-345-0695</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Company Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">COMPANY</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Affiliates</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Shop Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">SHOP</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">New Arrivals</a></li>
+          <li><a href="#" class="hover:underline">Accessories</a></li>
+          <li><a href="#" class="hover:underline">Men</a></li>
+          <li><a href="#" class="hover:underline">Women</a></li>
+          <li><a href="#" class="hover:underline">Shop All</a></li>
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">HELP</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Customer Service</a></li>
+          <li><a href="#" class="hover:underline">My Account</a></li>
+          <li><a href="#" class="hover:underline">Find a Store</a></li>
+          <li><a href="#" class="hover:underline">Legal & Privacy</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Gift Card</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe Form -->
+      <div>
+        <h4 class="text-white text-lg font-semibold mb-4">SUBSCRIBE</h4>
+        <p>Be the first to get the latest news about trends, promotions, and much more!</p>
+        <div class="mt-4">
+          <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-700 text-gray-300 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+          <button class="mt-4 w-full bg-gray-600 text-white py-2 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">JOIN</button>
+        </div>
+        <div class="mt-4 flex space-x-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Discover" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MasterCard" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Skrill" class="h-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Visa_2021.svg" alt="Visa" class="h-6">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- page 2  -->
+
+
+
+
+                    
+            
+
+            
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
